@@ -56,7 +56,7 @@ resource "aws_route_table_association" "mtc_public_assoc" {
 }
 
 
-//security groug. I didnt use tag here because security group has a name attribute.
+#security group. I didnt use tag here because security group has a name attribute.
 resource "aws_security_group" "mtc_sg" {
   name        = "dev-sg"
   description = "Dev security group"
@@ -100,7 +100,7 @@ resource "aws_instance" "dev_node" {
   user_data = file("userdata.tpl")
 
   root_block_device {
-    volume_size = 10
+    volume_size = 25 // I'm using 25gb because I want to use this to build another project
   }
 
   tags = {
@@ -117,3 +117,9 @@ resource "aws_instance" "dev_node" {
 
   }
 }
+
+output instance-ip {
+  value       = aws_instance.dev_node.public_ip
+  description = " public ip address for the dev node instance"
+}
+
