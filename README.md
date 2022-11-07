@@ -15,6 +15,8 @@ git config --global user.email "yourEmail"
 - You can use `terraform plan` to see all the resources that will be created.
 - If you check the `user.tpl` file you will find all the files that will be pre-installed with the development server
 - You can use `terraform apply -auto-approve` to deploy the resources to AWS. You can also check in the console to confirm everything deployed
+- To login to the server with ssh go the remote explorer on your vscode and click in the dropdown, select ssh-targets and you will see the ip address of the new development server. Just click connect to access it.
+- To confirm the pre-installed service, use `docker --version` to check for docker and `terraform --version` to check for terraform. You can now develope your solutions on the linux server.
 - To destroy the resources use `terraform destory -auto-approve`
 
 ![This is an image](https://github.com/Calebio/Terraform/blob/main/Dev-Archi.png)
