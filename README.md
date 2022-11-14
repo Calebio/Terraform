@@ -4,6 +4,8 @@
 - **On the /learns.md page, that's where I write down everything new I have learned and possible the errors you might encounter will running this project and how I solved them. I hope this is useful for you.**
 
 ## Steps to run the project
+
+- If you are yet to set up your aws account to work with vscode, [use this documentation](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html) to set up your AWS account and integrate with vscode.
 - If you haven't already set up your github use these piece of code to set up <br/>
 ```
 git config --global user.name "yourName"
