@@ -4,8 +4,8 @@
 - **On the /learns.md page, that's where I write down everything new I have learned and possible the errors you might encounter will running this project and how I solved them. I hope this is useful for you.**
 
 ## Prerequisite for this project.
-- Docker. this project pre-installs docker so after spinning up the server check the server to see the version of docker that is installed
-- Terraform. this project pre-installs terraform so after spinning up the server check the server to see the version of terraform that is installed
+- Docker. This project pre-installs docker so after spinning up the server check the server to see the version of docker that is installed
+- Terraform. This project pre-installs terraform so after spinning up the server check the server to see the version of terraform that is installed
 
 
 ## Steps to run the project
